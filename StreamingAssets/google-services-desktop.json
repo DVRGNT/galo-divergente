@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "578304602390",
+    "project_id": "acheiogalo",
+    "storage_bucket": "acheiogalo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578304602390:ios:8423c11fa65ae5999b2037",
+        "android_client_info": {
+          "package_name": "com.game.firebasedb"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvi8NiZusIPhuJdkoSD0b8PDMnlLpcvP4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
