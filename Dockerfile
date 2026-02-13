@@ -1,12 +1,14 @@
 FROM nginx:alpine
 
-# Remove config default
-RUN rm /etc/nginx/conf.d/default.conf
+# Apaga config padrão
+RUN rm -f /etc/nginx/conf.d/default.conf
 
-# Copia build do Unity
-COPY Build /usr/share/nginx/html
+# Copia sua config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Config nginx
-COPY nginx.conf /etc/nginx/conf.d
+# Copia o build do jogo
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
